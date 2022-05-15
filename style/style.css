@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+    background-color: #f3f5fc;
+    font-size: 24px;
+    line-height: 100%;
+}
+main {
+    display: flex;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+ @media(max-width:991px) {
+     main{
+    flex-direction: column;     
+ }
+}
+
+
+.logo_alura {
+    position: absolute;
+    left: 36px;
+    right: 37px;
+    bottom: 0;
+    top: 20px;
+}
+
+.input_text {
+    color: #0a3871;
+    border: 0.5px  solid;
+    margin-top: 90px;
+    margin-left: 80px;
+}
+.input_text_area {
+    position: relative;
+    margin-top: 20px;
+   
+}  
+
+/*CONDITION*/
+.content_condition_div {
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+}
+.content_text_edit{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius:32px;
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+.content_text_img {
+    margin: auto;
+    width: 40%;
+    height: auto;
+   justify-content: center;
+}
+.content_text_black {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin: 5px 0;
+}
+.content_text_grey {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin: 5px 0 20px 0;
+}
+
+/*CONDITION
+
+
+.content_text {
+    position: absolute;
+    left: 240px;
+    top: 168px;
+    font-weight: 400;
+    text-align: center;
+}
+.content_text_img {
+    margin-top: 100px;
+}
+
+.content_father_div {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.content_text_black {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin: 16px 0;
+}
+.content_text_grey {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin: 16px 0;
+}
+.content_condition_div {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.content_condition_div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}*/
+
+/*BOTONES*/
+
+.btns_div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn_encriptar {
+    position: static;
+    width: 250px;
+    height: 67px;
+    left: 24px;
+    top: 24px;
+    background: #0a3871;
+    border-radius: 24px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 24px;
+    margin: 0 0 10px 80px;
+   
+}
+.btn_desencriptar {
+    padding: 24px;
+    position: static;
+    width: 250px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #0a3871;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.btn_copy{
+    padding: 24px;
+    position: static;
+    width: 250px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #0a3871;
+    margin: 0 10px;
+    font-size: 16px;
+   display: none;
+}
+

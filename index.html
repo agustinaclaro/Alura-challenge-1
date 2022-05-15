@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&family=Montserrat:wght@300;400;600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"></link>
+</head>
+
+<body>
+    <header>
+        <img src="assets/icono.png" class="logo_alura" alt="letra a minuscula simbolo alura">
+    </header>
+    <main class="main">
+        <section class="content_section">
+                    <textarea type="text" id="text_forEncript" cols="40" rows="10" class="input_text"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="content_condition_div">
+                            <img src="assets/signo.png">
+                            <p>
+                                Solo letras minúsculas y sin acentos
+                            </p>
+                        </div>
+                  
+                    
+                        <div class="btns_div">
+                        <button class="btn_encriptar" onclick="btnEncriptar()" onclick="myFunction()">
+                            Encriptar
+                        </button>
+                        <button class="btn_desencriptar" onclick="btnDesencriptar()">
+                            Desencriptar
+                        </button>
+                    </div>
+        </section>
+        <section>
+            <div class="content_text_edit" >
+            <textarea type="text" cols="18" rows="8" id="text_Encript" class="input_text_area"></textarea>
+                <div id="content_text_editID" >
+                    <img src="./assets/Muñeco.png" class="content_text_img">
+                    <p class="content_text_black">Ningun mensaje fue <br> encontrado</p>
+                    <p class="content_text_grey">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <button class="btn_copy" id="btn_copy" onclick="copyText()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+
+        <script src="./js/index.js"></script> 
+    </main>
+</body>
+
+</html>
