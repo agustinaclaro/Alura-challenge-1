@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,42 +17,43 @@
         <img src="assets/icono.png" class="logo_alura" alt="letra a minuscula simbolo alura">
     </header>
     <main class="main">
-        <section class="content_section">
-                    <textarea type="text" id="text_forEncript" cols="40" rows="10" class="input_text"
+        <section class="section content_section_one">
+                    <textarea type="text" id="text_forEncript"  class="input_text"
                         placeholder="Ingrese el texto aqui"></textarea>
                         <div class="content_condition_div">
-                            <img src="assets/signo.png">
+                          <img src="./assets/signo.png">
                             <p>
                                 Solo letras minúsculas y sin acentos
                             </p>
-                        </div>
-                  
-                    
+                            </div>
+                        
                         <div class="btns_div">
-                        <button class="btn_encriptar" onclick="btnEncriptar()" onclick="myFunction()">
+                        <button id="button-encriptar"class="button btn_encriptar" onclick="btnEncript()">
                             Encriptar
                         </button>
-                        <button class="btn_desencriptar" onclick="btnDesencriptar()">
+                        <button id="button-desencriptar" class="button btn_desencriptar" onclick="btnDesencriptar()">
                             Desencriptar
                         </button>
                     </div>
         </section>
-        <section>
-            <div class="content_text_edit" >
-            <textarea type="text" cols="18" rows="8" id="text_Encript" class="input_text_area"></textarea>
-                <div id="content_text_editID" >
-                    <img src="./assets/Muñeco.png" class="content_text_img">
-                    <p class="content_text_black">Ningun mensaje fue <br> encontrado</p>
-                    <p class="content_text_grey">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
-                </div>
-                <button class="btn_copy" id="btn_copy" onclick="copyText()">
+        <section class="section content_section_two">
+            <div class="content_section_text" id="content_text_editID" >
+                <img src="./assets/Muñeco.png" class="content_text_img">
+                <p class="content_text_black">Ningun mensaje fue <br> encontrado</p>
+                <p class="content_text_grey">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="content_text_edit hide" id="result">
+            <textarea type="text" id="text_Encript" class="input_text_area"></textarea>
+                <button class="button btn_copy" id="button-copy" onclick="myCopyText()">
                     Copiar
                 </button>
             </div>
         </section>
-
-        <script src="./js/index.js"></script> 
+      <script src="./js/js.js"></script>
     </main>
+    <footer>
+        <p>Agustina Claro - Alura Challenge</p>
+    </footer>
 </body>
 
 </html>

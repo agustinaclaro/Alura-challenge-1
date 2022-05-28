@@ -2,22 +2,52 @@
     margin: 0px;
     padding: 0px;
     font-family: "Inter", sans-serif;
-    background-color: #f3f5fc;
-    font-size: 24px;
-    line-height: 100%;
+}
+body{
+    margin:0;
+   background-color: #f3f5fc;
+   height: calc(100vh - 130px);
+   max-width: 100%;
 }
 main {
     display: flex;
-    align-items: stretch;
-    min-height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    padding:40px;
+}
+@media(max-width: 771px){
+main{
+    flex-direction: column;
+
+}
+.content_section_two{
+    margin-top:20px;
+}
 }
 
- @media(max-width:991px) {
-     main{
-    flex-direction: column;     
- }
+.section{
+    height: 100%;
+    width:100%;
+    border-radius: 32px;
+}
+.content_section_one{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;   
 }
 
+.content_section_one .input_text{
+    resize: none;
+    border: none;
+    background-color: transparent;
+    width: calc(100% - 64px);
+    height: 100%;
+    margin: 32px;
+    font-size: 32px;
+}
 
 .logo_alura {
     position: absolute;
@@ -27,19 +57,123 @@ main {
     top: 20px;
 }
 
+.content_condition_div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 22px 22px;
+}
+.content_condition_div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    padding-left: 10px;
+}
+
+/*botones*/
+.btns_div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 22px;
+}
+.button{
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    padding: 24px; 
+    border-radius: 24px;
+    max-width: 200px;
+    width: 100%;
+}
+.btn_encriptar {
+    background: #0a3871;
+    color: white;
+}
+.btn_desencriptar {
+    background: #d8dfe8;
+    color: #0a3871;  
+    border: 1px solid #0a3871;
+
+}
+.btn_copy{
+    background: #d8dfe8;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+}
+/*section two*/
+.content_section_two{
+    background-color: white;
+    flex: 1;
+}
+.content_section_two .content_section_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 32px;
+    justify-content: center;
+}
+
+.content_text_img {
+    display:flex;
+    width: 50%;
+    height: auto;
+   justify-content: center;
+   align-items: center;
+}
+.content_text_black {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.content_text_grey {
+    font-size: 14px;
+    text-align: center;
+    color: #495057;
+    margin: 10px 0;
+}
+.content_text_edit{
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+}
+.input_text_area {
+    resize: none;
+    border:none;
+    color: #0a3871;
+    font-size:20px;
+    padding-top:32px;
+    letter-spacing: 1px;
+}  
+.hide {
+    display: none !important;
+  }
+footer{
+    background-color: #0a3871 ;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*
 .input_text {
     color: #0a3871;
     border: 0.5px  solid;
     margin-top: 90px;
     margin-left: 80px;
 }
-.input_text_area {
-    position: relative;
-    margin-top: 20px;
-   
-}  
 
-/*CONDITION*/
+
+/*CONDITION
 .content_condition_div {
     position:absolute;
     display: flex;
@@ -53,12 +187,7 @@ main {
     flex-direction: column;
     margin-left:20px;
 }
-.content_text_img {
-    margin: auto;
-    width: 40%;
-    height: auto;
-   justify-content: center;
-}
+
 .content_text_black {
     font-weight: 700;
     font-size: 24px;
@@ -113,77 +242,5 @@ main {
     text-align: center;
     color: #495057;
     margin: 16px 0;
-}
-.content_condition_div {
-    position: absolute;
-    top: 400px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-}
-.content_condition_div p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #495057;
-    opacity: 0.8;
 }*/
-
-/*BOTONES*/
-
-.btns_div {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    position: absolute;
-    z-index: 1;
-}
-
-.btn_encriptar {
-    position: static;
-    width: 250px;
-    height: 67px;
-    left: 24px;
-    top: 24px;
-    background: #0a3871;
-    border-radius: 24px;
-    color: white;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    padding: 24px;
-    margin: 0 0 10px 80px;
-   
-}
-.btn_desencriptar {
-    padding: 24px;
-    position: static;
-    width: 250px;
-    height: 67px;
-    left: 352px;
-    top: 0px;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
-    box-sizing: border-box;
-    border-radius: 24px;
-    color: #0a3871;
-    margin: 0 10px;
-    font-size: 16px;
-}
-.btn_copy{
-    padding: 24px;
-    position: static;
-    width: 250px;
-    height: 67px;
-    left: 352px;
-    top: 0px;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
-    box-sizing: border-box;
-    border-radius: 24px;
-    color: #0a3871;
-    margin: 0 10px;
-    font-size: 16px;
-   display: none;
-}
 
